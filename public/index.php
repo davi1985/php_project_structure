@@ -15,19 +15,15 @@
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
-
-    <!-- Includes pages -->
-    <?php
-
-    try {
-
-        require pagesLoad();
-
-    } catch (Exception $e) {
-        
-        echo $e->getMessage();
-    }
-    ?>  
-
+    <div class="container">
+        <!-- Includes pages -->
+        <?php
+        try {
+            require loadPages();
+        } catch (Exception $e) {   
+            echo $e->getMessage();
+        }
+        ?>  
+    </div>
 </body>
 </html>
